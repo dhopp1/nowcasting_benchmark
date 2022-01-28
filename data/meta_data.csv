@@ -1,0 +1,14 @@
+series,name,freq,block_g,block_s,block_r,block_l,months_lag
+payems,Payroll Employment,m,1,0,0,1,0
+gdpc1,Real Gross Domestic Product,q,1,0,1,0,4
+cpiaucsl,Consumer Price Index,m,1,0,0,0,1
+unrate,Unemployment Rate,m,1,0,0,1,0
+houst,Housing Starts,m,1,0,1,0,1
+indpro,Industrial Production,m,1,0,1,0,0
+dspic96,Personal Income,m,1,0,1,0,1
+cpilfesl,Core Consumer Price Index,m,1,0,0,0,0
+pcepilfe,Core PCE Price Index,m,1,0,0,0,1
+pcepi,PCE Price Index,m,1,0,0,0,1
+permit,Building Permits,m,1,0,1,0,0
+ulcnfb,Unit Labor Cost,q,1,0,0,1,0
+a261rx1q020sbea,Real Gross Domestic Income,q,1,0,1,0,1
