@@ -1,9 +1,9 @@
 library(tidyverse)
 library(fredr)
 
-# pass your api key as a command line argument
 args <- commandArgs(trailingOnly=TRUE)
 fredr_set_key(args[1])
+
 meta_data <- read_csv("meta_data.csv")
 
 data <- data.frame(
@@ -11,7 +11,9 @@ data <- data.frame(
 )
 
 for (col in toupper(meta_data$series)) {
-  tmp <- fredr(col)
+  tmp <- fredr(
+    series_id = col
+  )
   tmp <- tmp %>%
     rename(!!sym(tolower(col)) := value) %>%
     select(date, tolower(col)) %>%
